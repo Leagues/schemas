@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CommandEnvelope",
+  "description": "Envelope around a command payload",
+  "type": "object",
+  "properties": {
+    "commandId": {
+      "format": "uuid"
+    },
+    "command": {
+      "type": "string",
+      "minLength": 1
+    },
+    "payload": {
+      "type": "object"
+    }
+  },
+  "required": ["commandId","command","payload"]
+}

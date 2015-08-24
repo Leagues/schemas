@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RegisterAccount",
+  "description": "Registers a new account",
+  "type": "object",
+  "properties": {
+    "username": {
+      "format": "username"
+    },
+    "email": {
+      "format": "email"
+    },
+    "password": {
+      "type": "string",
+      "minLength": 8
+    }
+  },
+  "required": ["username","email","password"]
+}
