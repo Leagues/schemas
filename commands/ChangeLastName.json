@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ChangeLastName",
+  "description": "Changes the last name of an account",
+  "type": "object",
+  "properties": {
+    "accountId": {
+      "format": "uuid"
+    },
+    "lastName": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": ["accountId","lastName"]
+}

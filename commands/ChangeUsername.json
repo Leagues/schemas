@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ChangeUsername",
+  "description": "Changes the username of an account",
+  "type": "object",
+  "properties": {
+    "accountId": {
+      "format": "uuid"
+    },
+    "username": {
+      "format": "username"
+    }
+  },
+  "required": ["accountId","username"]
+}
